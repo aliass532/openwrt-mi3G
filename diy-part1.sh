@@ -15,4 +15,10 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+./scripts/feeds update luci
+./scripts/feeds install -a -p luci
+./scripts/feeds update packages
+./scripts/feeds install -a -p packages
+./scripts/feeds update routing
+./scripts/feeds install -a -p routing
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall.git' feeds.conf.default
