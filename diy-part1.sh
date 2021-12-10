@@ -17,4 +17,4 @@
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 #sed -i 's#KERNEL_PATCHVER:=5.4#KERNEL_PATCHVER:=5.10#g' target/linux/ramips/Makefile
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
-git clone https://github.com/garypang13/luci-app-eqos package/eqos
+git clone https://github.com/aliass532/luci-app-eqos package/eqos
